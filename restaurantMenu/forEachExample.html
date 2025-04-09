@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            function sendWelcomeEmail(email){
+                console.log(`welcome email sent to ${email}`);
+            }
+            
+            const users = [
+                { name: 'Alice', email: 'alice@example.com' },
+                { name: 'Bob', email: 'bob@example.com' },
+                { name: 'Charlie', email: 'charlie@example.com' },
+            ];
+
+            users.forEach((users)=> {
+                sendWelcomeEmail(users.email);
+            });
+        </script>
+
+    </body>
+</html>

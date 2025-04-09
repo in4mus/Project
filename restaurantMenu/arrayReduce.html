@@ -1,0 +1,13 @@
+<!Doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            ///calculates the total of an array  <-- Array Reduce
+            const orderPrices = [50, 30, 25, 40, 15];
+            const totalOrderValue = orderPrices.reduce((total, price) => total + price, 0);
+            console.log(`The total value of the order is `, totalOrderValue);
+        </script>
+    </body>
+</html>

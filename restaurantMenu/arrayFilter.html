@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            /// filter out the max or min of price of an array  -->Array Filter
+            const products = [
+                { name: 'Labtop', price: 1000 },
+                { name: 'Smartphone', price: 500 },
+                { name: 'Tablet', price: 300 },
+                { name: 'Monitor', price: 250 },
+                { name: 'Keyboard', price: 50 },
+            ];
+
+            function filterProductsbyPriceRange(products, minPrice, maxPrice){
+                return products.filter((product) => product.price >= minPrice && product.price <= maxPrice);
+            }
+
+            const minPrice = 100 // Minimum price threshold
+            const maxPrice = 500 // Maximum price threshold
+
+            const filterProducts = filterProductsbyPriceRange(products, minPrice, maxPrice);
+
+            filterProducts.forEach((product) => {
+                console.log(`${product.name} is of $${product.price}`);
+            });
+        </script>
+    </body>
+</html>

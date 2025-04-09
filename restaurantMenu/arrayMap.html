@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            /// 3 values in array, map will iterate each with some information.. <-- ArrayMap
+            const products = [
+                { name: 'Labtop', price: 1000 },
+                { name: 'Smartphone', price: 500 },
+                { name: 'Tablet', price: 300 },
+            ];
+
+            products.map((product) => {
+                console.log(`The price of ${product.name} is $${product.price}`)
+            });
+        </script>
+</body>
+</html>
